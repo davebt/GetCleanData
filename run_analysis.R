@@ -44,8 +44,8 @@ library(reshape2)
 rm(list=ls())
 
 # iii. set working directory to location of unzipped UCI HAR dataset
-start.wd <- getwd()
-setwd('/Users/David/Documents/Coursera/GetCleanData/')
+#start.wd <- getwd()
+#setwd('/Users/David/Documents/Coursera/GetCleanData/')
 
 # iv. Download the data
 if(!file.exists("./data")){dir.create("./data")}
@@ -180,4 +180,4 @@ write.table(Data.mean, file = "tidydata.txt",row.name=FALSE)
 ############
 
 # i. reset working directory to initial directory
-setwd(start.wd)
+#setwd(start.wd)
